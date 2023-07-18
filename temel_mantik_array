@@ -3,7 +3,7 @@ using namespace std;
 void diziDegis(int arr[], int quantity) {
 	for (int f = 1; f <= quantity; f++) {
 		arr[f - 1] = arr[f - 1] * arr[f - 1];
-		cout << arr[f - 1] << "\t";
+		cout << arr[f - 1] << ",\t";
 	}
 }
 int main() {
