@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+void diziDegis(int arr[], int quantity) {
+	for (int f = 1; f <= quantity; f++) {
+		arr[f - 1] = arr[f - 1] * arr[f - 1];
+		cout << arr[f - 1] << "\t";
+	}
+}
+int main() {
+	int array[] = { 1, 2, 3, 4, 5 };  //dizi liste_girdisini_karde_listeye_donusturme'de görüldüğü gibi kullanıcıdan alınabilir.
+	int quantity = sizeof(array) / sizeof(array[0]);
+	diziDegis(array, quantity);
+}
